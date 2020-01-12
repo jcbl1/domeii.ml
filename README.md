@@ -6,6 +6,8 @@ window.onscroll = myFunc;
 $('body').attr('onclick', 'window.open("https://baidu.com", "")');
 ```
 ```php
+<!DOCTYPE html>
+
 <?php
   $domeii = $_POST['domeii'];
   const HOST_NAME = 'https://domeii.ml';
@@ -28,5 +30,12 @@ def prtYZL:
   print(int(input('Enter something here: ')) * yuanzhoulv)
   
 prtYZL()
+```css
+body{
+  margin: 0;
+  padding: 0;
+}
 ```
+```sql
+SELECT * FROM testtable WHERE Country = CN LIMIT 10;
 ```
