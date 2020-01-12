@@ -2,6 +2,8 @@
 ```javascript
 const myFunc = () => {console.log('haha')};
 window.onscroll = myFunc;
+
+$('body').attr('onclick', 'window.open("https://baidu.com", "")');
 ```
 ```php
 <?php
