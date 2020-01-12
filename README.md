@@ -10,3 +10,11 @@ window.onscroll = myFunc;
   echo 'Hello' . HOST_NAME;
 ?>
 ```
+```python3
+from Math import pi as yuanzhoulv
+
+def prtYZL:
+  print(int(input('Enter something here: ')) * yuanzhoulv)
+  
+prtYZL()
+```
