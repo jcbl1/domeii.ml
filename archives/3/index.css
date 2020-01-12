@@ -1,0 +1,161 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.mrg{
+	margin-top: 10000px;
+}
+#topBar{
+	position: relative;
+	width: 100%;
+	border-bottom: 3px #000;
+	height: 50px;
+}
+#logo{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 60px;
+}
+#logo:hover{
+	cursor: pointer;
+}
+#menu{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 30px;
+}
+#contentMask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -5;
+	background: #000;
+	opacity: 0;
+
+}
+#menuDrop{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 10;
+	transform: translate(0, 100%);
+	padding: 20px;
+	box-sizing: border-box;
+}
+#menuUl{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#menuUl li{
+	padding: 10px 0;
+	background: rgba(0, 0, 0, 0);
+	transition: background 0.1s;
+	-o-transition: background 0.1s;
+	-moz-transition: background 0.1s;
+	-webkit-transition: background 0.1s;
+}
+#menuUl li:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.1);
+}
+#main{
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+	font-family: STSONG;
+	padding: 20px;
+	word-break: break-all;
+}
+.picture{
+	width: 100%;
+}
+#title{
+	text-align: center;
+	font-size: 2em;
+}
+#infoWrap{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+.portrait{
+	width: 35px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.editDate{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	color: #333;
+	font-size: 0.9em;
+}
+.videoHori{
+	width: 100%;
+}
+.code{
+	background: #516657;
+	border-left: 4px solid #DB5B29;
+	color: #fff;
+	padding: 10px;
+}
+
+
+
+
+
+#goToTop{
+	position: fixed;
+	right: 5px;
+	bottom: 60px;
+	width: 40px;
+	height: 40px;
+	z-index: -99;
+	background: #609a7b;
+	border-radius: 5px;
+}
+
+
+footer{
+  position: relative;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 30px 0;
+  background: #3c3c3c;
+  color: #fff;
+  overflow: hidden;
+}
+footer p{
+  margin: 8px auto;
+}
+.socialMedia{
+  margin: 0 4px;
+}
+.socialMedia:hover{
+  cursor: pointer;
+}
+#wechatQRCodeContainer{
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: #fff;
+  width: 180px;
+  height: 180px;
+  visibility: hidden;
+}

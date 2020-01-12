@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ssss</title>
+	<script src="https://cdn.bootcss.com/markdown.js/0.5.0/markdown.min.js"></script>
+</head>
+<body>
+	<textarea oninput="this.editor.update()" id="text-input"></textarea>
+	<div id="preview"></div>
+	<script>
+		function Editor(input, preview) {
+			this.update = function() {
+				preview.innerHTML = markdown.toHTML(input.value);
+			};
+			input.editor = this;
+			this.update();
+		}
+		var $ = function(id) {
+			return document.getElementById(id);
+		};
+		new Editor($('text-input'), $('preview'));
+	</script>
+</body>
+</html>
